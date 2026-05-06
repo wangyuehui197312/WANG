@@ -6,7 +6,7 @@ import ReportView from "@/components/ReportView";
 import { FengshuiReport } from "@/lib/report-schema";
 
 const imageTypeOptions = ["自动识别", "建筑外观", "户型图", "卧室", "客厅", "厨房", "卫生间", "庭院/大门", "道路/周边环境"];
-const analysisModes = ["建筑风水图片分析", "户型图风水分析", "卧室床位布局分析"];
+const analysisModes = ["建筑风水图片分析器", "测字文化分析器", "户型图风水分析", "卧室床位布局分析"];
 
 export default function HomePage() {
   const [file, setFile] = useState<File | null>(null);
@@ -43,7 +43,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-6xl px-4 py-10">
         <header className="rounded-2xl border border-[#dccfbe] bg-white p-8 shadow-sm">
           <h1 className="text-3xl font-bold text-[#5d4736]">建筑风水图片分析生成器</h1>
-          <p className="mt-3 text-[#6b5d4f]">上传房屋外观、户型图或室内照片，自动生成传统风水参考与现代居住舒适度分析报告。</p>
+          <p className="mt-3 text-[#6b5d4f]">支持建筑风水图片分析器与测字文化分析器两大入口，上传图片后自动生成传统文化参考与现代居住舒适度分析建议。</p>
           <p className="mt-4 rounded-lg bg-[#f8f4ed] p-3 text-sm text-[#786b5d]">本工具仅作为传统居住文化、空间心理、采光通风、动线安全与居住舒适度参考，不作绝对吉凶判断，不替代专业建筑、装修、消防、法律或医疗建议。</p>
         </header>
 
